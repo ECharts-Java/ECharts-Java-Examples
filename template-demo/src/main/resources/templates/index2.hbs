@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"
+        integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Echarts-Java Demo</title>
+</head>
+
+<body>
+    <h1>Welcome to Echarts Java</h1>
+
+    {{!-- method 2: using Option object--}}
+    <div id="display-container" style="height: 600px; width: 600px"></div>
+    </div>
+    <script>
+        let chart = echarts.init(document.getElementById("display-container"));
+        let option = {{{ this }}}
+        chart.setOption(option);
+    </script>
+</body>
+
+</html>
