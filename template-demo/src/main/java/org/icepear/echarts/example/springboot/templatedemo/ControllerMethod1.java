@@ -6,7 +6,6 @@ import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
 
 import org.icepear.echarts.Line;
-import org.icepear.echarts.Option;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
 import org.icepear.echarts.components.series.AreaStyle;
