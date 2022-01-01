@@ -1,18 +1,15 @@
-package com.echarts.example.spring.springdemo;
+package org.icepear.echarts.example.springboot.templatedemo;
 
 import java.io.IOException;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
 
-import org.icepear.echarts.Chart;
 import org.icepear.echarts.Line;
-import org.icepear.echarts.Option;
+import org.icepear.echarts.charts.line.LineAreaStyle;
 import org.icepear.echarts.charts.line.LineSeries;
 import org.icepear.echarts.components.coord.cartesian.CategoryAxis;
-import org.icepear.echarts.components.series.AreaStyle;
 import org.icepear.echarts.render.Engine;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,7 +26,7 @@ public class ControllerMethod2 {
                 .addYAxis()
                 .addSeries(new LineSeries()
                         .setData(new Number[] { 820, 932, 901, 934, 1290, 1330, 1320 })
-                        .setAreaStyle(new AreaStyle()));
+                        .setAreaStyle(new LineAreaStyle()));
         Engine engine = new Engine();
         Handlebars handlebars = new Handlebars();
         String html = "";
